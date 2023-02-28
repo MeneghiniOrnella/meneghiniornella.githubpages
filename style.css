@@ -1,0 +1,7 @@
+svg {
+    font-size: 6em;
+    color: rgb(204, 70, 204);
+}
+svg:hover, svg:focus {
+    color: rgb(197, 197, 0);
+}
