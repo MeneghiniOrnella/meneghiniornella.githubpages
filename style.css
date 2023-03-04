@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
 :root {
     --principal      : #cd24bf;
@@ -7,16 +7,7 @@
     --light-grey     : #b0b0b0;
     --dark-principal : #83239b;
     --light-principal: #9648aa;
-}
-
-#app {
-    font-family: 'Rubik', sans-serif;
-    -webkit-font-smoothing : antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    background: #f4f8fa;
-    /* cursor: url('../src/assets/logo.png'), move; */
-    /* cursor: url("ruta_imagen1"), url("ruta_imagen2"), pointer; */
+    font-family: 'Hind Madurai', sans-serif;
 }
 
 h1 {
@@ -42,7 +33,6 @@ h4 {
 h5, h6 {
     /* font-size: 4vw; */
     font-size: 1.8rem;
-    font-family: 'Barlow Condensed', sans-serif;
 }
 p, b {
     font-size: 1.6rem;
@@ -134,4 +124,8 @@ svg {
 }
 svg:hover, svg:focus {
     color: rgb(23, 214, 214);
+}
+
+.url {
+    display: inline-flex;
 }
