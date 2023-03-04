@@ -129,9 +129,9 @@ nav > div {
 }
 
 svg {
-    font-size: 6em;
-    color: rgb(204, 70, 204);
+    font-size: 4em;
+    color: rgb(180, 59, 180);
 }
 svg:hover, svg:focus {
-    color: rgb(197, 197, 0);
+    color: rgb(23, 214, 214);
 }

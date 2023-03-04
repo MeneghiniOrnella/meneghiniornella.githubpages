@@ -1,20 +1,20 @@
-const proyects = [
+const data = [
     [
         {
             "title": "Portfolio",
             "img": "portfolio.png",
-            "description": "Portfolio created in Vue.",
+            "description": "Portfolio created in Vue.js.",
             "urlGithub": "https://github.com/MeneghiniOrnella/MeneghiniOrnella.github.io",
             "urlSite":"https://meneghiniornella.netlify.app/",
-            "skills": ["vue", "javascript", "html", "css"]
+            "skills": ["Vue.js", "Javascript", "HTML", "CSS"]
         },
         {
             "title": "Pokemon Game",
-            "img": "pokeapi.png",
-            "description": "Guess the pokemon game.It was made using Pokeapi and Vue.",
+            "img": "pokeAPI.png",
+            "description": "Guess the pokemon game.It was made using PokeAPI and Vue.js.",
             "urlGithub": "https://github.com/MeneghiniOrnella/pokemon-game",
             "urlSite":"",
-            "skills": ["api", "vue", "javascript", "html", "css"]
+            "skills": ["API", "Vue.js", "Javascript", "HTML", "CSS"]
         },
         {
             "title": "Mascotas",
@@ -22,7 +22,7 @@ const proyects = [
             "description": "Team proyect of Codo a Codo Python 2021",
             "urlGithub": "https://github.com/MeneghiniOrnella/mascotas",
             "urlSite":"",
-            "skills": ["python", "flask", "mysql", "bootstrap", "html", "css"]
+            "skills": ["Python", "Flask", "MySQL", "Bootstrap", "HTML", "CSS"]
         },
         {
             "title": "Gamedo",
@@ -30,15 +30,21 @@ const proyects = [
             "description": "Multiple choice game made for a taekwondo school.",
             "urlGithub": "https://github.com/MeneghiniOrnella/tkd-gamedo",
             "urlSite":"https://gamedo.netlify.app/",
-            "skills": ["html", "javascript", "css"]
+            "skills": ["HTML", "Javascript", "CSS"]
         },
         {
             "title": "Role Game",
             "img": "logo.png",
             "description": "Sorry! This application is being created.",
-            "urlGithub": "https://github.com/MeneghiniOrnella/vue-role-game.git",
+            "urlGithub": "https://github.com/MeneghiniOrnella/Vue.js-role-game.git",
             "urlSite":"",
-            "skills": ["vue", "javascript", "html", "css"]
+            "skills": ["Vue.js", "Javascript", "HTML", "CSS"]
         }
     ]
 ];
+
+const projects() {
+    return data.map((project) => {
+      return project;
+    })
+}
