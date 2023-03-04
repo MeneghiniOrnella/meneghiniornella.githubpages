@@ -23,50 +23,28 @@
     <h2>Full Stack Developer</h2>
     <section id="about">
         <h3>About</h3>
-        <p>In 2020, I decided to change the course of my career to a <b>Full Stack Developer</b>. I finished a degree in international trade because I had the objective and the perseverence to finish it. I am studying a technical degree. Currently, I learn different lenguages and information about the IT World.</p>
+        <p>In 2020, I decided to change the course of my career to a <b>Full Stack Developer</b>. I finished a degree in international trade because I had the objective and the perseverence to finish it. I am working  like as a developer and studying a programming technical degree. Currently, I learn different lenguages and information about the IT World.</p>
         <p>My objetive is becoming a complete professional programmer. That is why I always look for courses, videos and complementary texts which help me to grow up professionally in a constant way.</p>
     </section>
     <section id="skills">
         <h3>Skills</h3>
         <div class="skills">
-            <i class="fa-brands fa-square-js"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-vuejs"></i>
-            <i class="fa-brands fa-node-js"></i>
-            <i class="fa-solid fa-database"></i>
-            <i class="fa-brands fa-markdown"></i>
-            <i class="fa-brands fa-sass"></i>
-            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-square-js" title="Javascript" alt="Javascript"></i>
+            <i class="fa-brands fa-html5" title="HTML" alt="HTML"></i>
+            <i class="fa-brands fa-css3-alt" title="CSS" alt="CSS"></i>
+            <i class="fa-brands fa-python" title="Python" alt="Python"></i>
+            <i class="fa-brands fa-react" title="React.Js" alt="React.Js"></i>
+            <i class="fa-brands fa-vuejs" title="Vue.Js" alt="Vue.Js"></i>
+            <i class="fa-brands fa-node-js" title="Node.Js" alt="Node.Js"></i>
+            <i class="fa-solid fa-database" title="MySQL" alt="MySQL"></i>
+            <i class="fa-brands fa-markdown" title="Markdown" alt="Markdown"></i>
+            <i class="fa-brands fa-sass" title="SASS" alt="SASS"></i>
+            <i class="fa-brands fa-bootstrap" title="Bootstrap" alt="Bootstrap"></i>
         </div>
     </section>
     <section id="proyects">
         <h3>Proyects</h3>
-        <div class="cards-group">
-            <div class="card"
-              v-for="project in projects"
-              :key="project"
-            >
-              <h4 class="title">{{ project.title }}</h4>
-              <img
-                :src="require(`@/assets/projects/${ project.img }`)"
-                :title="project.title"
-                :alt="project.title"
-              >
-              <p class="otherInfo">{{ project.description }}</p>
-              <div class="projectBtns">
-                <a target="_blank"
-                  :href="project.urlGithub"
-                >GitHub</a>
-                <a target="_blank"
-                  :href="project.urlSite"
-                  :class="{ inactive: project.urlSite === '' }"
-                >Site</a>
-              </div>
-            </div>
-          </div>
+        <div id="project"></div>
     </section>
     <footer id="contact">
         <a href="https://meneghiniornella.netlify.app" target="_blank">Page created by Ornella Meneghini &copy 2023</a>
@@ -76,6 +54,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/093473ac19.js" crossorigin="anonymous"></script>
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
 </body>
 </html>
