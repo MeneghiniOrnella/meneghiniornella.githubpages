@@ -43,25 +43,48 @@ const data = [
     }
 ];
 
-for(let i = 0; i < data.length; i++) {
-    let card = document.createElement("div");
-    let cardImg = document.createElement("img");
-    let cardTitle = document.createElement("h4");
-    let cardDescription = document.createElement("p");
-    let cardUrlGithub = document.createElement("a");
-    let cardSkills = document.createElement("div");
+// for(let i = 0; i < data.length; i++) {
+//     let card = document.createElement("div");
+//     let cardImg = document.createElement("img");
+//     let cardTitle = document.createElement("h4");
+//     let cardDescription = document.createElement("p");
+//     let cardUrlGithub = document.createElement("a");
+//     let cardSkills = document.createElement("div");
 
-    cardImg.innerHTML = data[i].img;
-    cardTitle.innerHTML = data[i].title;
-    cardDescription.innerHTML = data[i].description;
-    cardUrlGithub.innerHTML = data[i].urlGithub;
-    cardSkills.innerHTML = data[i].skills;
+//     cardImg.innerHTML = data[i].img;
+//     cardTitle.innerHTML = data[i].title;
+//     cardDescription.innerHTML = data[i].description;
+//     cardUrlGithub.innerHTML = data[i].urlGithub;
+//     cardUrlSite.innerHTML = data[i].urlSite;
+//     cardSkills.innerHTML = data[i].skills;
 
-    card.appendChild(cardImg);
-    card.appendChild(cardTitle);
-    card.appendChild(cardDescription);
-    card.appendChild(cardUrlGithub);
-    card.appendChild(cardSkills);
+//     card.appendChild(cardImg);
+//     card.appendChild(cardTitle);
+//     card.appendChild(cardDescription);
+//     card.appendChild(cardUrlGithub);
+//     card.appendChild(cardUrlSite);
+//     card.appendChild(cardSkills);
     
-    project.appendChild(card);
-};
+//     project.appendChild(card);
+// };
+
+const cardTemplate = (data) => `
+    <div class="card">
+        <img src="${data.img}" alt="${data.title}">
+        <h4>${data.title}</h4>
+        <p>${data.description}</p>
+        <div class="url">
+            <a href="${data.urlGithub}">GitHub</a>
+            <a href="${data.urlSite}">Site</a>
+        </div>
+        <div>${data.skills.join(", ")}</div>
+    </div>
+`;
+
+const cardElements = data.map((item) => {
+    const card = document.createElement("div");
+    card.innerHTML = cardTemplate(item);
+    return card;
+});
+
+project.append(...cardElements);
