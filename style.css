@@ -7,7 +7,11 @@
     --light-grey     : #b0b0b0;
     --dark-principal : #83239b;
     --light-principal: #9648aa;
+}
+
+body {
     font-family: 'Hind Madurai', sans-serif;
+    margin: 0 3rem;
 }
 
 h1 {
@@ -53,6 +57,7 @@ a, button {
     cursor: pointer;
     border: none;
     border-radius: 50px;
+    text-align: center;
 }
 a:focus, a:hover {
     color: var(--principal);
@@ -118,14 +123,30 @@ nav > div {
     color: #000;
 }
 
+.skills {
+    text-align: center;
+}
 svg {
-    font-size: 4em;
+    font-size: 6.4em;
     color: rgb(180, 59, 180);
+    margin: 0.8rem 2rem;
 }
 svg:hover, svg:focus {
-    color: rgb(23, 214, 214);
+    color: rgb(90, 226, 226);
 }
 
 .url {
     display: inline-flex;
+}
+.url a {
+    margin: 0 1.8rem 2rem;
+}
+
+footer {
+    display: inline-flex;
+    /* margin: 1.4rem 4rem; */
+}
+footer a {
+    background-color: transparent;
+    padding: 0 1.8rem;
 }
