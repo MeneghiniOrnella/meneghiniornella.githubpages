@@ -29,6 +29,7 @@ h3 {
   color: var(--principal);
   font-size: 2.4rem;
   margin: 1em 0 0;
+  color: #05003d;
 }
 
 h4 {
@@ -95,15 +96,6 @@ nav > div {
   flex-wrap: wrap;
   justify-content: center;
 }
-.cards-group .icons-group {
-  display: flex;
-  flex-direction: row;
-}
-.cards-group .icons-group a {
-  background: none;
-  border: none;
-  margin: auto;
-}
 
 .card {
   background-color: rgb(255, 255, 255);
@@ -115,7 +107,21 @@ nav > div {
   width: 15em;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.icons-group {
+  display: flex;
+  flex-direction: row;
+}
+.icons-group a {
+  background: none;
+  border: none;
+  margin: auto;
+}
+
+.card {
   width: 80%;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 0;
   padding-bottom: 1.4em;
@@ -129,23 +135,25 @@ nav > div {
   position: relative;
   display: inline-block;
 }
-.skills .skillsFront {
+
+.skillsFront {
   position: relative;
   text-align: center;
   z-index: 1;
 }
-.skills .skillsFront svg {
+.skillsFront svg {
   font-size: 6.4em;
   color: rgb(180, 59, 180);
   margin: 0.8rem 2rem;
 }
-.skills .skillsFront svg:focus, .skills .skillsFront svg:hover {
+.skillsFront svg:hover, .skillsFront svg:focus {
   color: rgb(90, 226, 226);
 }
-.skills .skillsBack {
+
+.skillsBack {
   position: relative;
 }
-.skills .skillsBack::before {
+.skillsBack::before {
   content: "";
   position: absolute;
   top: 0;
@@ -154,7 +162,8 @@ nav > div {
   height: 100%;
   z-index: -1;
 }
-.skills .arrayBack {
+
+.arrayBack {
   position: absolute;
   top: 0;
   left: 0;

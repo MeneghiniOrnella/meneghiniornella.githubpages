@@ -28,6 +28,7 @@ h3 {
     color: var(--principal);
     font-size: 2.4rem;
     margin: 1em 0 0;
+    color: #05003d;
 }
 h4 {
     /* font-size: 5vw; */
@@ -88,16 +89,6 @@ nav > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    .icons-group {
-        display: flex;
-        flex-direction: row;
-        a {
-            background: none;
-            border: none;
-            margin: auto;
-        }
-    }
 }
 .card {
     background-color: rgb(255, 255, 255);
@@ -108,6 +99,19 @@ nav > div {
     padding: 1.5em 2em;
     width: 15em;
     height: fit-content;
+}
+
+.icons-group {
+    display: flex;
+    flex-direction: row;
+    a {
+        background: none;
+        border: none;
+        margin: auto;
+    }
+}
+
+.card {
     width: 80%;
     height: fit-content;
     padding: 0;
@@ -117,42 +121,45 @@ nav > div {
     background-color: #fff9c2;
     color: #000;
 }
+
 .skills {
     position: relative;
     display: inline-block;
-    .skillsFront {
-        position: relative;
-        text-align: center;
-        z-index: 1;
-        svg {
-            font-size: 6.4em;
-            color: rgb(180, 59, 180);
-            margin: 0.8rem 2rem;
-            &:focus, &:hover {
-                color: rgb(90, 226, 226);
-            }
+}
+.skillsFront {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    svg {
+        font-size: 6.4em;
+        color: rgb(180, 59, 180);
+        margin: 0.8rem 2rem;
+        &:hover, &:focus {
+            color: rgb(90, 226, 226);
         }
     }
-    .skillsBack {
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 80%;
-            height: 100%;
-            z-index: -1;
-        }
-    }
-    .arrayBack {
+}
+
+
+.skillsBack {
+    position: relative;
+    &::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
-        color: #255f5f;
-        font-size: 1.8rem;
-        opacity: 0.6;
+        width: 80%;
+        height: 100%;
+        z-index: -1;
     }
+}
+.arrayBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #255f5f;
+    font-size: 1.8rem;
+    opacity: 0.6;
 }
 
 .url {
