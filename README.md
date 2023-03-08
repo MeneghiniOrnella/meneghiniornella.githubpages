@@ -4,7 +4,7 @@
 
 ## Technologies used
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-- [CSS](https://desarrolloweb.com/home/css)
+- [SASS](https://sass-lang.com)
 - [Javascript Vainilla](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ### More information

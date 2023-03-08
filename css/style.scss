@@ -11,7 +11,8 @@
 
 body {
     font-family: 'Hind Madurai', sans-serif;
-    margin: 0 3rem;
+    /* margin: 0 3rem; */
+    width: 80%;
 }
 
 h1 {
@@ -27,7 +28,6 @@ h3 {
     color: var(--principal);
     font-size: 2.4rem;
     margin: 1em 0 0;
-    color: #05003d;
 }
 h4 {
     /* font-size: 5vw; */
@@ -58,12 +58,10 @@ a, button {
     border: none;
     border-radius: 50px;
     text-align: center;
-}
-a:focus, a:hover {
-    color: var(--principal);
-}
-a:hover, button:hover {
-    transform: scale(1.2);
+    &:focus, &:hover {
+        color: var(--principal);
+        transform: scale(1.2);
+    }
 }
 
 li {
@@ -90,6 +88,16 @@ nav > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    .icons-group {
+        display: flex;
+        flex-direction: row;
+        a {
+            background: none;
+            border: none;
+            margin: auto;
+        }
+    }
 }
 .card {
     background-color: rgb(255, 255, 255);
@@ -100,19 +108,6 @@ nav > div {
     padding: 1.5em 2em;
     width: 15em;
     height: fit-content;
-}
-
-.icons-group {
-    display: flex;
-    flex-direction: row;
-}
-.icons-group a {
-    background: none;
-    border: none;
-    margin: auto;
-}
-
-.card {
     width: 80%;
     height: fit-content;
     padding: 0;
@@ -122,57 +117,56 @@ nav > div {
     background-color: #fff9c2;
     color: #000;
 }
-
 .skills {
     position: relative;
     display: inline-block;
-}
-.skillsFront {
-    position: relative;
-    text-align: center;
-    z-index: 1;
-}
-.skillsFront svg {
-    font-size: 6.4em;
-    color: rgb(180, 59, 180);
-    margin: 0.8rem 2rem;
-}
-.skillsFront svg:hover, .skillsFront svg:focus {
-    color: rgb(90, 226, 226);
-}
-.skillsBack {
-    position: relative;
-}
-.skillsBack::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-.arrayBack {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: rgb(37, 95, 95);
-    font-size: 1.8rem;
-    opacity: 0.6;
+    .skillsFront {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        svg {
+            font-size: 6.4em;
+            color: rgb(180, 59, 180);
+            margin: 0.8rem 2rem;
+            &:focus, &:hover {
+                color: rgb(90, 226, 226);
+            }
+        }
+    }
+    .skillsBack {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    .arrayBack {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #255f5f;
+        font-size: 1.8rem;
+        opacity: 0.6;
+    }
 }
 
 .url {
     display: inline-flex;
-}
-.url a {
-    margin: 0 1.8rem 2rem;
+    a {
+        margin: 0 1.8rem 2rem;
+    }
 }
 
 footer {
     display: inline-flex;
     /* margin: 1.4rem 4rem; */
-}
-footer a {
-    background-color: transparent;
-    padding: 0 1.8rem;
+    a {
+        background-color: transparent;
+        padding: 0 1.8rem;
+    }
 }
