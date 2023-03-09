@@ -7,6 +7,6 @@
 - [SASS](https://sass-lang.com)
 - [Javascript Vainilla](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-### More information
+## More information
 - [Fontawesome](https://fontawesome.com/)
 - [Google Fonts](https://developers.google.com/fonts)
