@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
-
 :root {
   --principal: #cd24bf;
   --secondary: #c5e1fe;
@@ -102,12 +101,17 @@ nav > div {
   background-color: rgb(255, 255, 255);
   margin: 1.5em 1em;
   border-radius: 15px;
-  box-shadow: 4px 2px 10px var(--light-grey);
-  border: 1px solid var(--light-grey);
+  box-shadow: 3px 1px 6px var(--light-grey);
+  border: 0px solid var(--light-grey);
   padding: 1.5em 2em;
-  width: 15em;
   height: -moz-fit-content;
   height: fit-content;
+  width: 80%;
+  padding-bottom: 1.4em;
+  justify-self: center;
+  text-align: center;
+  background-color: #fafafa;
+  color: #030303;
 }
 
 .icons-group {
@@ -118,18 +122,6 @@ nav > div {
   background: none;
   border: none;
   margin: auto;
-}
-
-.card {
-  width: 80%;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 0;
-  padding-bottom: 1.4em;
-  justify-self: center;
-  text-align: center;
-  background-color: #fff9c2;
-  color: #000;
 }
 
 .skills {

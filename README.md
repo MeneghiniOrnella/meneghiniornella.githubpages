@@ -1,6 +1,6 @@
 # Portfolio of Ornella Meneghini
 
-<!-- ## Link: [https://meneghiniornella.netlify.app/](https://meneghiniornella.netlify.app/) -->
+## Link: [https://meneghiniornella.github.io/portfolio/](https://meneghiniornella.github.io/portfolio/)
 
 ## Technologies used
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
