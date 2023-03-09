@@ -5,19 +5,19 @@ const arrayFront = ["fa-brands fa-square-js", "fa-brands fa-html5", "fa-brands f
 const arrayBacks = ["JSON", "Wordpress", "Canva", "Figma", "GIT", "Github", "VSCode", "Codepen", "Repl.it", "Trello", "NPM", "YARN"];
 
 // skillsFront
-const cardTemplate = (arrayFront) => `
-    <div class="card">
-        <i class="${ arrayFront }"></i>
-    </div>
-`;
+// const cardTemplate = (arrayFront) => `
+//     <div class="card">
+//         <i class="${ arrayFront }"></i>
+//     </div>
+// `;
 
-const frontElements = arrayFront.map((item) => {
-    const arrayFront = document.createElement("div");
-    arrayFront.innerHTML = cardTemplate(item);
-    return arrayFront;
-});
+// const frontElements = arrayFront.map((item) => {
+//     const arrayFront = document.createElement("div");
+//     arrayFront.innerHTML = cardTemplate(item);
+//     return arrayFront;
+// });
 
-project.append(...frontElements);
+// project.append(...frontElements);
 
 // skillsBack
 for (let i = 0; i < arrayBacks.length + 10; i++) {
