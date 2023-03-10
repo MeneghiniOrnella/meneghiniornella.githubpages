@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
-:root {
-  --principal: #a42fbb;
-  --secondary: #c5e1fe;
-  --dark-grey: #010000;
-  --light-grey: #b0b0b0;
-  --dark-principal: #83239b;
-  --light-principal: #9648aa;
-}
-
 body {
   font-family: "Hind Madurai", sans-serif;
   /* margin: 0 3rem; */
@@ -26,7 +17,7 @@ h2 {
 
 h3 {
   /* font-size: 6vw; */
-  color: var(--principal);
+  color: #a42fbb;
   font-size: 2.4rem;
   margin: 1em 0 0;
   color: #05003d;
@@ -34,7 +25,7 @@ h3 {
 
 h4 {
   /* font-size: 5vw; */
-  color: var(--principal);
+  color: #a42fbb;
   font-size: 2rem;
 }
 
@@ -58,7 +49,7 @@ a, button {
   font-weight: 600;
   color: #000;
   text-decoration: none;
-  background-color: var(--secondary);
+  background-color: #c5e1fe;
   margin: 0 auto;
   cursor: pointer;
   border: none;
@@ -66,7 +57,7 @@ a, button {
   text-align: center;
 }
 a:hover, button:hover {
-  color: var(--principal);
+  color: #a42fbb;
   transform: scale(1.2);
 }
 
@@ -76,7 +67,7 @@ li {
 }
 
 span {
-  color: var(--dark-grey);
+  color: #010000;
   font-size: 1.5rem;
 }
 
@@ -101,8 +92,8 @@ nav > div {
   background-color: rgb(255, 255, 255);
   margin: 1.5em 1em;
   border-radius: 15px;
-  box-shadow: 3px 1px 6px var(--light-grey);
-  border: 0px solid var(--light-grey);
+  box-shadow: 3px 1px 6px #b0b0b0;
+  border: 0px solid #b0b0b0;
   padding: 1.5em 2em;
   height: -moz-fit-content;
   height: fit-content;
@@ -166,7 +157,7 @@ nav > div {
 }
 
 .projectSkills {
-  color: var(--dark-grey);
+  color: #010000;
   font-size: 1.3rem;
 }
 
@@ -211,11 +202,11 @@ footer a {
 
 ::-webkit-scrollbar {
   width: 0.4em;
-  background-color: var(--light-grey);
+  background-color: #b0b0b0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--dark-grey);
+  background-color: #010000;
   border-radius: 0.1em;
   -webkit-border-radius: 0.1em;
   -moz-border-radius: 0.1em;
@@ -223,5 +214,5 @@ footer a {
   -o-border-radius: 0.1em;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--dark-principal);
+  background-color: #83239b;
 }/*# sourceMappingURL=style.css.map */
