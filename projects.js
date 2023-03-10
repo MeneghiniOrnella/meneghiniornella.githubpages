@@ -75,7 +75,7 @@ const cardTemplate = (data) => `
         <p>${data.description}</p>
         <div class="url">
             <a href="${data.urlGithub}">GitHub</a>
-            <a href="${data.urlSite}">Site</a>
+
         </div>
         <div>${data.skills.join(", ")}</div>
     </div>
