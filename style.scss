@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
 :root {
-    --principal      : #cd24bf;
+    --principal      : #a42fbb;
     --secondary      : #c5e1fe;
     --dark-grey      : #010000;
     --light-grey     : #b0b0b0;
@@ -59,7 +59,8 @@ a, button {
     border: none;
     border-radius: 50px;
     text-align: center;
-    &:focus, &:hover {
+    
+    &:hover {
         color: var(--principal);
         transform: scale(1.2);
     }
@@ -109,6 +110,7 @@ nav > div {
 .icons-group {
     display: flex;
     flex-direction: row;
+
     a {
         background: none;
         border: none;
@@ -124,10 +126,12 @@ nav > div {
     position: relative;
     text-align: center;
     z-index: 1;
+
     svg {
         font-size: 6.4em;
         color: rgb(180, 59, 180);
         margin: 0.8rem 2rem;
+
         &:hover, &:focus {
             color: rgb(90, 226, 226);
         }
@@ -135,6 +139,7 @@ nav > div {
 }
 .skillsBack {
     position: relative;
+
     &::before {
         content: "";
         position: absolute;
@@ -160,13 +165,13 @@ nav > div {
 }
 .url {
     display: inline-flex;
+
     a {
         margin: 0 1.8rem 2rem;
     }
 }
 
 .carousel {
-    justify-content: center;
     #prev, #next {
         position: relative;
         border-radius: 50%;
@@ -177,15 +182,18 @@ nav > div {
         width: 4em;
         height: 4em;
         z-index: 1;
-}
+    }
+
     #prev {
             right: 16em;
             bottom: 18em;
     }
+
     #next {
         right: -16em;
-        bottom: 22em;
+        bottom: 20em;
     }
+
     #proyect {
         z-index: -1;
     }
@@ -197,5 +205,22 @@ footer {
     a {
         background-color: transparent;
         padding: 0 1.8rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    background-color: var(--light-grey);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-grey);
+    border-radius: 0.1em;
+    -webkit-border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    -ms-border-radius: 0.1em;
+    -o-border-radius: 0.1em;
+
+    &:hover{
+        background-color: var(--dark-principal);
     }
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
 :root {
-  --principal: #cd24bf;
+  --principal: #a42fbb;
   --secondary: #c5e1fe;
   --dark-grey: #010000;
   --light-grey: #b0b0b0;
@@ -65,7 +65,7 @@ a, button {
   border-radius: 50px;
   text-align: center;
 }
-a:focus, a:hover, button:focus, button:hover {
+a:hover, button:hover {
   color: var(--principal);
   transform: scale(1.2);
 }
@@ -177,9 +177,6 @@ nav > div {
   margin: 0 1.8rem 2rem;
 }
 
-.carousel {
-  justify-content: center;
-}
 .carousel #prev, .carousel #next {
   position: relative;
   border-radius: 50%;
@@ -197,7 +194,7 @@ nav > div {
 }
 .carousel #next {
   right: -16em;
-  bottom: 22em;
+  bottom: 20em;
 }
 .carousel #proyect {
   z-index: -1;
@@ -210,4 +207,21 @@ footer {
 footer a {
   background-color: transparent;
   padding: 0 1.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+  background-color: var(--light-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-grey);
+  border-radius: 0.1em;
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  -ms-border-radius: 0.1em;
+  -o-border-radius: 0.1em;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dark-principal);
 }/*# sourceMappingURL=style.css.map */
