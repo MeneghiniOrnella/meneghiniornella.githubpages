@@ -10,3 +10,4 @@
 ## More information
 - [Fontawesome Icons](https://fontawesome.com/)
 - [Google Fonts](https://developers.google.com/fonts)
+- [Get Waves](https://getwaves.io) > [Haikei](https://haikei.app/)

@@ -10,7 +10,7 @@ $light-principal: #9648aa;
 body {
     font-family: 'Hind Madurai', sans-serif;
     /* margin: 0 3rem; */
-    width: 80%;
+    // width: 80%;
 }
 
 h1 {
@@ -82,6 +82,14 @@ nav > div {
 }
 .favicon {
       background: none;
+}
+
+#home {
+    background-color: $secondary;
+}
+.wave {
+    position: relative;
+    bottom: 2.2em;
 }
 
 .cards-group {

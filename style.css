@@ -2,7 +2,6 @@
 body {
   font-family: "Hind Madurai", sans-serif;
   /* margin: 0 3rem; */
-  width: 80%;
 }
 
 h1 {
@@ -80,6 +79,15 @@ nav > div {
 
 .favicon {
   background: none;
+}
+
+#home {
+  background-color: #c5e1fe;
+}
+
+.wave {
+  position: relative;
+  bottom: 2.2em;
 }
 
 .cards-group {
