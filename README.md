@@ -8,5 +8,5 @@
 - [Javascript Vainilla](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## More information
-- [Fontawesome](https://fontawesome.com/)
+- [Fontawesome Icons](https://fontawesome.com/)
 - [Google Fonts](https://developers.google.com/fonts)

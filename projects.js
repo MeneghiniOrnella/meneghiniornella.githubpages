@@ -2,7 +2,7 @@ const project = document.getElementById("project");
 
 const data = [
     {
-        "title": "Portfolio",
+        "title": "Portfolio Vue.Js",
         "img": "portfolio.png",
         "description": "Portfolio created in Vue.js.",
         "urlGithub": "https://github.com/MeneghiniOrnella/MeneghiniOrnella.github.io",
@@ -10,9 +10,17 @@ const data = [
         "skills": ["Vue.js", "Javascript", "HTML", "CSS"]
     },
     {
+        "title": "Portfolio Js",
+        "img": "portfolio.png",
+        "description": "Portfolio created in Vue.js.",
+        "urlGithub": "https://github.com/MeneghiniOrnella/portfolio",
+        "urlSite":"https://meneghiniornella.github.io/portfolio/",
+        "skills": ["Javascript", "HTML", "SASS"]
+    },
+    {
         "title": "Pokemon Game",
         "img": "pokeAPI.png",
-        "description": "Guess the pokemon game.It was made using PokeAPI and Vue.js.",
+        "description": "Guess the pokemon game. It was made using PokeAPI and Vue.Js.",
         "urlGithub": "https://github.com/MeneghiniOrnella/pokemon-game",
         "urlSite":"",
         "skills": ["API", "Vue.js", "Javascript", "HTML", "CSS"]
@@ -20,7 +28,7 @@ const data = [
     {
         "title": "Mascotas",
         "img": "dog.jpg",
-        "description": "Team proyect of Codo a Codo Python 2021",
+        "description": "Team proyect of Codo a Codo Python 2021.",
         "urlGithub": "https://github.com/MeneghiniOrnella/mascotas",
         "urlSite":"",
         "skills": ["Python", "Flask", "MySQL", "Bootstrap", "HTML", "CSS"]
@@ -28,10 +36,10 @@ const data = [
     {
         "title": "Gamedo",
         "img": "gamedo.png",
-        "description": "Multiple choice game made for a taekwondo school.",
+        "description": "Quiz game made for a taekwondo school.",
         "urlGithub": "https://github.com/MeneghiniOrnella/tkd-gamedo",
         "urlSite":"https://gamedo.netlify.app/",
-        "skills": ["HTML", "Javascript", "CSS"]
+        "skills": ["Javascript", "HTML", "CSS"]
     },
     {
         "title": "Role Game",
@@ -70,14 +78,14 @@ const data = [
 
 const cardTemplate = (data) => `
     <div class="card">
-        <img src="${data.img}" alt="${data.title}">
-        <h4>${data.title}</h4>
-        <p>${data.description}</p>
+        <img src="${ data.img }" alt="${ data.title }">
+        <h4>${ data.title }</h4>
+        <p>${ data.description }</p>
         <div class="url">
-            <a href="${data.urlGithub}">GitHub</a>
-
+            ${ data.urlGithub ? `<a href="${data.urlGithub}">Github</a>` : '' }
+            ${ data.urlSite ? `<a href="${data.urlSite}">Site</a>` : '' }
         </div>
-        <div>${data.skills.join(", ")}</div>
+        <p class="projectSkills">${ data.skills.join(", ") }</p>
     </div>
 `;
 
