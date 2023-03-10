@@ -165,6 +165,32 @@ nav > div {
     }
 }
 
+.carousel {
+    justify-content: center;
+    #prev, #next {
+        position: relative;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        z-index: 1;
+}
+    #prev {
+            right: 16em;
+            bottom: 18em;
+    }
+    #next {
+        right: -16em;
+        bottom: 22em;
+    }
+    #proyect {
+        z-index: -1;
+    }
+}
+
 footer {
     display: inline-flex;
     /* margin: 1.4rem 4rem; */
