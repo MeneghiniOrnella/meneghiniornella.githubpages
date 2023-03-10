@@ -1,4 +1,7 @@
+let currentIndex = 0;
 const project = document.getElementById("project");
+const prev    = document.getElementById("prev");
+const next    = document.getElementById("next");
 
 const data = [
     {
@@ -96,3 +99,32 @@ const cardElements = data.map((item) => {
 });
 
 project.append(...cardElements);
+
+const showSlide = (index) => {
+    const slides = document.querySelectorAll(".card");
+    slides.forEach((slide, i) => {
+        if(i === index) {
+            slide.style.display = "block";
+        } else {
+            slide.style.display = "none";
+        }
+    });
+};
+
+const prevSlide = () => {
+    currentIndex--;
+    if(currentIndex < 0) {
+        currentIndex = data.length - 1;
+    }
+    showSlide(currentIndex);
+};
+const nextSlide = () => {
+    currentIndex++;
+    if(currentIndex >= data.length) {
+        currentIndex = 0;
+    }
+    showSlide(currentIndex);
+};
+prev.addEventListener("click", prevSlide);
+next.addEventListener("click", nextSlide);
+showSlide(currentIndex);
