@@ -9,13 +9,16 @@ h1, h2, h3, h4, h5, h6, b {
 }
 
 h1 {
+  color: #a42fbb;
   /* font-size: 10vw; */
-  font-size: 3.6rem;
+  font-size: 4.5rem;
+  padding-top: 3.5em;
 }
 
 h2 {
   /* font-size: 8vw; */
   font-size: 2.6rem;
+  padding-bottom: 2em;
 }
 
 h3 {
@@ -69,10 +72,10 @@ li {
   list-style: none;
 }
 
-/* span {
+span {
   color: #010000;
   font-size: 1.5rem;
-} */
+}
 
 nav > div {
   display: flex;
@@ -205,11 +208,18 @@ nav > div {
 
 footer {
   display: inline-flex;
+  margin-top: -0.4em;
+  width: 100%;
   /* margin: 1.4rem 4rem; */
+  background-color: #c5e1fe;
 }
 footer a {
   background-color: transparent;
   padding: 0 1.8rem;
+  font-size: 5em;
+}
+footer .om {
+  font-size: 1.6em;
 }
 
 ::-webkit-scrollbar {
