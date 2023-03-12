@@ -2,6 +2,7 @@ let currentIndex = 0;
 const project = document.getElementById("project");
 const prev    = document.getElementById("prev");
 const next    = document.getElementById("next");
+const indicators = document.getElementById("indicators");
 
 const data = [
     {
