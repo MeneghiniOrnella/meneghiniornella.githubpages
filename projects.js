@@ -42,7 +42,7 @@ const data = [
         "img": "gamedo.png",
         "description": "Quiz game made for a taekwondo school.",
         "urlGithub": "https://github.com/MeneghiniOrnella/tkd-gamedo",
-        "urlSite":"https://gamedo.netlify.app/",
+        "urlSite":"https://meneghiniornella.github.io/tkd-gamedo/",
         "skills": ["Javascript", "HTML", "CSS"]
     },
     {
