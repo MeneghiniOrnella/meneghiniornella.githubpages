@@ -8,7 +8,7 @@ const data = [
     {
         "title": "Portfolio Vue.Js",
         "img": "portfolio.png",
-        "description": "Portfolio created in Vue.js.",
+        "description": "Professional portfolio created in Vue.js.",
         "urlGithub": "https://github.com/MeneghiniOrnella/MeneghiniOrnella.github.io",
         "urlSite":"https://meneghiniornella.netlify.app/",
         "skills": ["Vue.js", "Javascript", "HTML", "CSS"]
@@ -16,7 +16,7 @@ const data = [
     {
         "title": "Portfolio Js",
         "img": "portfolio.png",
-        "description": "Portfolio created in Vue.js.",
+        "description": "Professional portfolio",
         "urlGithub": "https://github.com/MeneghiniOrnella/portfolio",
         "urlSite":"https://meneghiniornella.github.io/portfolio/",
         "skills": ["Javascript", "HTML", "SASS"]
