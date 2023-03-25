@@ -1,5 +1,5 @@
 const skillsFront = document.querySelector(".skillsFront");
-const skillsBack = document.querySelector(".skillsBack");
+const skillsBack  = document.querySelector(".skillsBack");
 
 const arrayFront = ["fa-brands fa-square-js", "fa-brands fa-html5", "fa-brands fa-css3-alt"];
 const arrayBacks = ["JSON", "Wordpress", "Canva", "Figma", "GIT", "Github", "VSCode", "Codepen", "Repl.it", "Trello", "NPM", "YARN"];
