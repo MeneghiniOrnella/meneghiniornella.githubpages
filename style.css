@@ -95,6 +95,7 @@ nav > div {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
+  transition: 300ms;
 }
 
 .hero img {
@@ -249,4 +250,30 @@ footer .om {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #83239b;
+}
+
+.arrowup {
+  background-color: #a42fbb;
+  color: #c5e1fe;
+  padding: 9px;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: sticky;
+  bottom: 1rem;
+  left: 92%;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.arrowup:hover {
+  background-color: #83239b;
+  color: #c5e1fe;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */

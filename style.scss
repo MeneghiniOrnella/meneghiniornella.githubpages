@@ -99,6 +99,7 @@ nav > div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
+    transition: 300ms;
 }
 .hero img {
     width: 16em;
@@ -256,6 +257,32 @@ footer {
 
     &:hover{
         background-color: $dark-principal;
+    }
+}
+
+.arrowup {
+    background-color: $principal;
+    color: $secondary;
+    padding: 9px;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    position: sticky;
+    bottom: 1rem;
+    left: 92%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    &:hover{
+        background-color: $dark-principal;
+        color: $secondary;
+        font-size: 1.3rem;
     }
 }
 
