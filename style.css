@@ -7,7 +7,13 @@ body {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ctitle%3Ecursor-link%3C/title%3E%3Cg%3E%3Ccircle cx='32' cy='32' r='30' fill='rgba(150, 72, 170, 0.541)' stroke='rgb(150, 72, 170)' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E") 32 32, pointer;
 }
 
-h1, h2, h3, h4, h5, h6, b {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
   text-align: center;
 }
 
@@ -43,7 +49,8 @@ h5, h6 {
   font-size: 1.8rem;
 }
 
-p, b {
+p,
+b {
   font-size: 1.6rem;
 }
 
@@ -51,7 +58,8 @@ b {
   font-weight: 800;
 }
 
-a, button {
+a,
+button {
   display: block;
   padding: 0.4em 0.4em;
   width: 6em;
@@ -65,7 +73,8 @@ a, button {
   border-radius: 50px;
   text-align: center;
 }
-a:hover, button:hover {
+a:hover,
+button:hover {
   color: #a42fbb;
   transform: scale(1.2);
 }
@@ -207,27 +216,30 @@ nav > div {
   margin: 0 1.8rem 2rem;
 }
 
-.carousel #prev, .carousel #next {
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+}
+.carousel #prev,
+.carousel #next {
+  position: absolute;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 4em;
   height: 4em;
   z-index: 1;
 }
 .carousel #prev {
-  right: 16em;
-  bottom: 18em;
+  left: 0;
 }
 .carousel #next {
-  right: -16em;
-  bottom: 20em;
+  right: 0;
 }
-.carousel #proyect {
+.carousel #project {
   z-index: -1;
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 footer {

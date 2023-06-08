@@ -19,7 +19,13 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6, b {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
     text-align: center;
 }
 h1 {
@@ -49,14 +55,16 @@ h5, h6 {
     /* font-size: 4vw; */
     font-size: 1.8rem;
 }
-p, b {
+p,
+b {
     font-size: 1.6rem;
 }
 b {
     font-weight: 800;
 }
 
-a, button {
+a,
+button {
     display: block;
     padding: 0.4em 0.4em;
     width: 6em;
@@ -209,32 +217,33 @@ nav > div {
 }
 
 .carousel {
-    #prev, #next {
-        position: relative;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        width: 4em;
-        height: 4em;
-        z-index: 1;
-    }
-
-    #prev {
-            right: 16em;
-            bottom: 18em;
-    }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    #prev,
     #next {
-        right: -16em;
-        bottom: 20em;
+      position: absolute;
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+      z-index: 1;
     }
-
-    #proyect {
-        z-index: -1;
+  
+    #prev {
+      left: 0;
     }
-}
+  
+    #next {
+      right: 0;
+    }
+  
+    #project {
+      z-index: -1;
+      min-height: min-content;
+    }
+  }
 
 footer {
     display: inline-flex;
