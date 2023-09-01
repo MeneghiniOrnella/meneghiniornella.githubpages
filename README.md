@@ -7,7 +7,7 @@
 - [SASS](https://sass-lang.com)
 - [Javascript Vainilla](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-## More information
+## Other tools used
 - [Fontawesome Icons](https://fontawesome.com/)
 - [Google Fonts](https://developers.google.com/fonts)
 - [Get Waves](https://getwaves.io) > [Haikei](https://haikei.app/)
